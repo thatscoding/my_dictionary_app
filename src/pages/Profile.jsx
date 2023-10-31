@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { GetPostsById, GetUserById, TimeZones, Users } from "../services/api";
+import { GetPostsById, GetUserById, TimeZones } from "../services/api";
 
 function Modal({ isOpen, openCloseModal, post }) {
   return (
@@ -94,7 +94,7 @@ function Profile() {
       console.log(data3.data);
     }
     getUser();
-  }, []);
+  }, [id]);
 
   return (
     <div className="container xl:max-w-7xl mx-auto">

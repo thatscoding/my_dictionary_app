@@ -1,7 +1,6 @@
-import axios from "axios";
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Users, getPostsById } from "../services/api";
+import { Users } from "../services/api";
 
 function Home() {
   const [users, setUsers] = useState([]);
